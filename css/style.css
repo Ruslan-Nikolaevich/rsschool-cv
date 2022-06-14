@@ -23,13 +23,27 @@ a{
     text-decoration: none;
     color: #5c5c5c;
     /* font-size: 18px; */
-    
+    position: relative;
 
 }
 nav{
     display: flex;
     justify-content: flex-end;
 }
+.link-underline::before{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0; 
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: 0.4s;
+    z-index: 999;
+}
+.link-underline:hover:before{
+    width: 100%;
+   }
 .wrapper-content__style-block{
     position: relative;
     background-color: #f0f0f0;
