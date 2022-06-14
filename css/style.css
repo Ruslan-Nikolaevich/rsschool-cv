@@ -10,8 +10,8 @@ html{
     position: relative;
     width: 65%;
     margin: 0 auto;
-    font-size: 16px;
-    color: #5c5c5c;
+    /* font-size: 20px; */
+    /* color: #5c5c5c; */
     background-color: #fff;
     box-sizing: border-box;
     padding: 15px;
@@ -22,113 +22,37 @@ html{
 a{
     text-decoration: none;
     color: #5c5c5c;
-    font-size: 18px;
+    /* font-size: 18px; */
     
 
 }
 nav{
     display: flex;
-   justify-content: flex-end;
+    justify-content: flex-end;
 }
-.wrapper-content__style-block_burger{
-   margin-top: 30px;
-}
-/* .wrapper__navigation-list_burger{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
-    /* border: 1px solid yellow; 
-} */
+.wrapper-content__style-block{
+    position: relative;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
 
-/* //-------------------------------- */
-/* .gamburger{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 96px;
-    height: 96px;
-    cursor: pointer;
-    border:none;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
+    border-left: 4px solid #d6d6d6;
+    padding: 10px 10px 10px 35px; 
      
-} */
-/* .gamburger:focus{
-    outline: none;
-} */
-/* .gamburger span{
-    display: block;
-    position: absolute;
-    top: 44px;
-    left: 18px;
-    right: 18px;
-    height: 8px;
-    background: #fff;
-}
-.gamburger span::before, .gamburger span::after{
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 8px;
-    background: #fff;
-    content: "";
-}
-.gamburger span::before{
-    top: -20px;
-}
-.gamburger span::after{
-    bottom: -20px;
-}
-.animation span::before{
-transition-property: top,transform;
-}
-.animation span::after{
-    transition-property: bottom,transform;
-    }
-    .animation.is-active{
-
-    }
-    .animation.is-active span{
-        background: none;
-    }
-    .animation.is-active span::before{
-        top: 0px;
-        transform: rotate(-45deg);
-    }
-    .animation.is-active span::after{
-        bottom: 0px;
-        transform: rotate(45deg);
-    }
-    #menu{
-        width: 300px;
-        margin-right: -204px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        transition: all,ease, 1s;
-        z-index: 100;
-        background: #d3bdc7;
-    }
-    .body-active{
-        margin-right: 300px;
-    }
-    #menu.nav-active{
-        margin-right: -10px;
-    } */
+    margin-bottom: 15px;
     
-
-/* //-------------------------- */
-
-
+}
 .wrapper__navigation-list{
-    min-width: 65%;
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 10px 10px 0px;
     /* border: 1px solid black; */
 }
 .wrapper__navigation-list_media768{
@@ -165,12 +89,7 @@ transition-property: top,transform;
     box-sizing: border-box;
     background-color: #d6d6d6;
 }
-.wrapper-content__style-block{
-    position: relative;
-    background-color: #f0f0f0;
-    border-left: 4px solid #d6d6d6;
-    padding-left: 35px;  
-}
+
 .pre-javascript{
      color: #333;
      background: none;
@@ -238,7 +157,7 @@ transition-property: top,transform;
         min-width: 100%;
     }
     .link-decor{
-        font-size: 12px;
+        font-size: 22px;
     }
     
     .logo-img{
@@ -246,13 +165,7 @@ transition-property: top,transform;
         height: 40px;
        /* border: 1px solid black; */
     }
-    /* .wrapper-content__style-block{
-        display: none;
-    } */
-    /* .wrapper-content__style-block_burger{
-        display: block;
-    } */
-    
+       
 }
 @media (max-width: 768px){
     .pre-javascript{
@@ -272,19 +185,29 @@ transition-property: top,transform;
         justify-content: space-between;
         font-size: 16px;
 
+
+    }
+    .link-decor{
+        font-size: 18px;
     }
     .logo-img{
         width: 140px;
         height: 80px;
        /* border: 1px solid black; */
     }
-    
-
-   
+   }
+   @media (max-width: 520px){
+       .link-decor{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 400px){
     .pre-javascript{
         font-size: 10px;
     } 
+    .link-decor{
+        font-size: 12px;
+    }
+
 }
